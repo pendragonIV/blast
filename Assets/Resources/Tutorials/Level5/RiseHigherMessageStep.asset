@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa62d5f9e6115194498c68a1a590bd01, type: 3}
+  m_Name: RiseHigherMessageStep
+  m_EditorClassIdentifier: Assembly-CSharp::ShowPopUpMessageStep
+  _mainMessage: Some levels now rise higher!
+  _subMessage: 
+  _isShowCloseButton: 1

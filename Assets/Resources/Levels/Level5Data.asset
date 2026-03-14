@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f052aedc7f0b4845928078f19e53a95, type: 3}
+  m_Name: Level5Data
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  LevelGrid: {fileID: 4900000, guid: f7045c1884804d44991bb7ab7803c04b, type: 3}
+  ShooterGrid: {fileID: 0}
+  NumOfBlockLayers: 2
+  NumOfShooterCols: 3
+  NumOfDockCols: 5
+  ShooterCellGap: 0.25
+  ShooterStartingAmmo: 20
