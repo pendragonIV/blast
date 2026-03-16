@@ -167,9 +167,6 @@ public class ShooterManager : MonoBehaviour
         var totalShooters = levelGrid.Count * levelGrid[0].Length * levelInfo.NumOfBlockLayers / _shooterStartingAmmo;
         var rows = totalShooters / levelInfo.NumOfShooterCols;
 
-        Debug.Log("num of shooter rows " + rows);
-        Debug.Log("num of shooter cols " + levelInfo.NumOfShooterCols);
-
         var colourKeys = colourToCountMap.Keys.ToList();
         _shooterGrid.Setup(new Vector2(rows, levelInfo.NumOfShooterCols), levelInfo.ShooterCellGap);
         
@@ -241,19 +238,9 @@ public class ShooterManager : MonoBehaviour
             }
         }
 
-        foreach (KeyValuePair<string, int> kvp in tempMap)
-        {
-            Debug.Log("colour to block count " + kvp.Key + " " + kvp.Value);
-        }
-
         foreach (KeyValuePair<string, int> item in tempMap)
         {
             mapToReturn.Add(item.Key, item.Value / _shooterStartingAmmo);
-        }
-
-        foreach (KeyValuePair<string, int> kvp in mapToReturn)
-        {
-            Debug.Log("colour to shooter count " + kvp.Key + " " + kvp.Value);
         }
 
         return mapToReturn;
